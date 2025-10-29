@@ -1,0 +1,93 @@
+:root {
+    --padding: 4rem 7rem;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    /* padding: 2em; */
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: var(--padding);
+}
+
+.background-shape {
+    position: absolute;
+    top: -100%;
+    bottom: 50%;
+    width: 100%;
+    left: 0;
+    background-color: cadetblue;
+    transform: skewY(-10deg);
+    z-index: -1;
+
+}
+
+.portrait {
+    width: 40rem;
+    height: auto;
+}
+
+.transparent {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.portrait-container {
+    max-width: 20em;
+    float: left;
+    position: relative;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+.about {
+    padding: 1em;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 1rem;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    gap: 2rem;
+
+    background-color: cyan;
+    padding: var(--padding);
+}
+
+.contact-info {
+    flex: 1;
+}
+
+footer .portrait {
+    width: 30em;
+}
+
+
+
+
